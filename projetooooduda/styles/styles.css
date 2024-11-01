@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#246eaa;
+}
+
+header {
+    background-color: #1f6299;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo {
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.intro {
+    text-align: center;
+    padding: 50px;
+    background: #3286ca;
+    color: #FFFFFF;
+}
+
+.cta-button {
+    background-color: #90BE6D;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+   
+}
+
+.cta-button:hover {
+    position: sticky;
+    
+   
+    background-color: #333;
+    color: white;
+    margin: 0 auto;
+   
+
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.testimonial {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Estilo para a seção da galeria */
+#galeria {
+    text-align: center;
+    padding: 40px;
+    background-color: #F3F4F6;
+}
+
+#galeria h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para o contêiner de imagens */
+.galeria-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 auto;
+    max-width: 1200px; /* Define uma largura máxima para a galeria */
+}
+.testimonials {
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial {
+    display: inline-block;
+    background-color: #f0f0f0; /* Light background color for the box */
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px;
+    max-width: 300px; /* Adjust the width */
+    position: relative;
+}
+
+.testimonial::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20px; /* Adjust to position the tail */
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent transparent; /* Same color as the background */
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #333; /* Text color */
+    margin: 0;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+/* Estilo para as imagens */
+.galeria-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.galeria-container img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.service-cards, .gallery-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.card, .testimonial {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    color: #333;
+}
+
+.container {
+   
+    justify-content: center;
+     
+   
+}
+
+.contact {
+  
+
+    background-color: #f0f8ff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+ margin: 0 auto;
+    
+    
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%; 
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #A9D6E5;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #FF9F00; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e08a00;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #A9D6E5;
+    color: #FFFFFF;
+}
